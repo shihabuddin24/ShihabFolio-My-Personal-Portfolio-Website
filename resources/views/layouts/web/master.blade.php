@@ -11,12 +11,16 @@
     <meta name="description" content="Professional Laravel Developer Portfolio of Shihab Uddin. Showcasing web development projects, skills, and experience in PHP, Laravel, Vue.js, and React.">
     <meta name="keywords" content="Laravel Developer, PHP Developer, Web Developer Bangladesh, Portfolio, Shihab Uddin, Vue.js, React">
     <meta name="author" content="Shihab Uddin">
+
+    @include('layouts.web.components.css')
 </head>
 <body>
-    <div class="row">
-        <div class="container-fluid">
-            @yield('main_content')
-        </div>
-    </div>
+    @include('layouts.web.components.header')
+
+    @yield('main_content')
+
+    @include('layouts.web.components.footer')
+
+    @include('layouts.web.components.script')
 </body>
 </html>
