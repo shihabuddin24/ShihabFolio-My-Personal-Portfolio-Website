@@ -5,7 +5,6 @@
 @endsection
 
 @section('main_content')
-    <!-- ================= HERO ================= -->
 <section class="hero-section">
     <div class="container">
         <div class="row align-items-center">
@@ -18,18 +17,17 @@
                     Build modern and scalable web applications with Laravel & Vue.js
                 </p>
 
-                <a href="#" class="btn custom-btn mt-3">View Portfolio</a>
+                <a href="#" class="btn custom-btn mt-3">Leave a Review</a>
             </div>
 
             <div class="col-lg-6 text-center">
-                <img src="{{ asset('assets/images/author.jpg') }}" class="img-fluid hero-img" alt="Profile">
+                <img src="{{ asset('assets/images/author.png') }}" class="img-fluid hero-img" alt="Profile">
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- ================= SERVICES ================= -->
 <section class="services-section py-5">
     <div class="container text-center">
         <h2 class="section-title">My Services</h2>
@@ -59,7 +57,6 @@
     </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
 <section class="projects-section py-5">
     <div class="container text-center">
         <h2 class="section-title">Featured Projects</h2>
@@ -87,14 +84,12 @@
     </div>
 </section>
 
-<!-- ================= SKILLS & EXPERIENCE ================= -->
 <section class="skills-section py-5">
     <div class="container">
         <h2 class="section-title text-center">Experience & Skills</h2>
 
         <div class="row mt-5">
 
-            <!-- Experience -->
             <div class="col-lg-6">
                 <ul class="timeline">
                     <li>
@@ -116,7 +111,6 @@
                 </ul>
             </div>
 
-            <!-- Skills -->
             <div class="col-lg-6">
                 <div class="skill">
                     <p>Design</p>
@@ -151,7 +145,6 @@
     </div>
 </section>
 
-<!-- ================= TESTIMONIALS ================= -->
 <section class="testimonial-section py-5">
     <div class="container text-center">
         <h2 class="section-title">Testimonials</h2>
@@ -181,7 +174,6 @@
     </div>
 </section>
 
-<!-- ================= CONTRACT ================= -->
 <section class="contact-section py-5">
     <div class="container">
         <div class="row contact-wrapper">
@@ -199,7 +191,6 @@
                 </div>
             </div>
 
-            <!-- Right -->
             <div class="col-lg-6 col-md-12 contact-right">
                 <form action="" class="" method="POST">
                     @csrf

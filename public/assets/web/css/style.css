@@ -34,6 +34,19 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 }
 
 /* Navbar */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler, .fa-bars {
+    color: var(--primary);
+}
+
+.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .custom-navbar {
     background: var(--secondary);
     padding: 15px 0;
@@ -46,11 +59,47 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 
 .nav-link {
     color: var(--dark);
-    font-weight: 500;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    transition: all .3s ease-in-out;
 }
 
 .nav-link:hover {
-    color: var(--primary);
+    color: var(--primary) !important;
+}
+
+.nav-link.active {
+    color: var(--primary) !important;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    height: 2px;
+    border-radius: 1rem;
+    background: var(--primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+    transform: scaleX(1);
+    width: 100%;
+}
+
+.header-logo {
+    height: 45px;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover .header-logo {
+    transform: scale(1.05);
 }
 
 /* Button */
