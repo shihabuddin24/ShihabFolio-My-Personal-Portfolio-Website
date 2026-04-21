@@ -10,6 +10,7 @@
         <div class="row align-items-center">
 
             <div class="col-lg-6">
+                <small class="hero-subtitle fs-6 fw-bold">heei</small>
                 <h1 class="hero-title">
                     Welcome to the <br> PHP Developer
                 </h1>
@@ -20,8 +21,8 @@
                 <a href="#" class="btn custom-btn mt-3">Leave a Review</a>
             </div>
 
-            <div class="col-lg-6 text-center">
-                <img src="{{ asset('assets/images/author.png') }}" class="img-fluid hero-img" alt="Profile">
+            <div class="col-lg-6 text-center hero-img-area">
+                <img src="{{ asset('assets/images/author.png') }}" class="hero-img" alt="Profile">
             </div>
 
         </div>

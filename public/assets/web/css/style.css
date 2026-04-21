@@ -132,8 +132,23 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: #555;
 }
 
+.hero-img-area {
+    background-image: url('/assets/images/hero-blob.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
 .hero-img {
-    max-height: 350px;
+    max-height: 400px;
+    margin-bottom: 112px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 100px;
+    object-fit: cover;
 }
 
 /* Section Title */
