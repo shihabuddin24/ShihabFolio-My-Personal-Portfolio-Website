@@ -5,10 +5,9 @@
 @endsection
 
 @section('main_content')
-<section class="hero-section">
+<section class="hero-section py-5">
     <div class="container">
         <div class="row align-items-center">
-
             <div class="col-lg-6">
                 <small class="hero-subtitle fs-6 fw-bold">heei</small>
                 <h1 class="hero-title">

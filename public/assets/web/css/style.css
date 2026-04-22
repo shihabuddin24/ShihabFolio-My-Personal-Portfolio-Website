@@ -118,7 +118,6 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 /* Hero */
 .hero-section {
     background: var(--secondary);
-    padding: 80px 0;
 }
 
 .hero-title {
@@ -133,7 +132,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 }
 
 .hero-img-area {
-    background-image: url('/assets/images/hero-blob.png');
+    background-image: url('/assets/images/blur.png');
+    width: 450px;
+    height: 450px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -141,14 +142,13 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 50%;
 }
 
 .hero-img {
-    max-height: 400px;
-    margin-bottom: 112px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 100px;
+    height: 400px;
     object-fit: cover;
+    border-bottom: 2px solid var(--primary);
 }
 
 /* Section Title */
