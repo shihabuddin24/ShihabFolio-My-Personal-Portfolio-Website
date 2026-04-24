@@ -19,8 +19,9 @@
                         and PostgreSQL to ensure fast, secure, and high-performance applications.
                     </p>
                     <a href="#" class="btn custom-btn mt-2">Leave a Review</a>
-                    <p class="hero-rating mt-4 fw-bold">
-                        Avg Rating: <i class="fa-regular fa-star"></i> 4.9/5 (<span class="animate-counter">200</span>+ Reviews)
+                    <p class="hero-rating mt-4">
+                        Avg Rating: <i class="fa-regular fa-star"></i> 4.9/5 (<span class="animate-counter">200</span>+
+                        Reviews)
                     </p>
                 </div>
 
@@ -34,28 +35,96 @@
     <section class="services-section py-5">
         <div class="container text-center">
             <h2 class="section-title">My Services</h2>
+            <div class="owl-carousel services-owl mt-4">
 
-            <div class="row mt-4">
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Service 1 -->
+                <div class="item">
                     <div class="service-card">
-                        <h5>Backend</h5>
-                        <p>Building secure and scalable backend systems with Laravel.</p>
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Laravel">
+                        <h5>Laravel Development</h5>
+                        <p>Secure and scalable backend systems with Laravel.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
                     <div class="service-card">
-                        <h5>Full Stack</h5>
-                        <p>Complete web solutions using modern technologies.</p>
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Bootstrap">
+                        <h5>Bootstrap UI Design</h5>
+                        <p>Responsive and modern UI using Bootstrap 5.</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Service 7 -->
+                <div class="item">
                     <div class="service-card">
-                        <h5>API</h5>
-                        <p>Robust REST API development for mobile & web apps.</p>
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Tailwind">
+                        <h5>Tailwind CSS Design</h5>
+                        <p>Utility-first modern design with Tailwind CSS.</p>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="PHP">
+                        <h5>PHP Development</h5>
+                        <p>Powerful server-side development using core PHP & frameworks.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="API">
+                        <h5>REST API</h5>
+                        <p>Robust APIs for mobile & web applications.</p>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="JavaScript">
+                        <h5>JavaScript Development</h5>
+                        <p>Dynamic frontend interactions using modern JavaScript.</p>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Ecommerce">
+                        <h5>E-commerce</h5>
+                        <p>Complete online store solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                        <h5>Database Design</h5>
+                        <p>MySQL & PostgreSQL optimized structure.</p>
+                    </div>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Performance">
+                        <h5>Performance Optimization</h5>
+                        <p>Speed optimization for scalable apps.</p>
+                    </div>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="item">
+                    <div class="service-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="SaaS">
+                        <h5>SaaS Development</h5>
+                        <p>Modern SaaS applications with scalable architecture.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -205,7 +274,8 @@
                                 <label class="ms-2" for="name">{{ __('Full Name') }}</label>
                             </div>
                             <div class="form-floating mb-3 col-12">
-                                <input type="email" class="form-control" placeholder="name@example.com" id="email">
+                                <input type="email" class="form-control" placeholder="name@example.com"
+                                    id="email">
                                 <label class="ms-2" for="email">{{ __('Email Address') }}</label>
                             </div>
                             <div class="form-floating mb-3 col-12">

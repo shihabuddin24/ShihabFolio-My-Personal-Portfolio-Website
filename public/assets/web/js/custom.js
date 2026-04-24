@@ -1,6 +1,8 @@
 "use strict";
 
 $(document).ready(function () {
+
+    // Hero Review Count Start
     $('.animate-counter').each(function () {
         let $this = $(this);
         let countTo = parseInt($this.text());
@@ -21,4 +23,38 @@ $(document).ready(function () {
             }
         );
     });
+    // Hero Review Count End
+
+    // Slider Start
+    $('.services-owl').owlCarousel({
+        loop: $('.services-owl .item').length > 1,
+        margin: 20,
+        autoplay: $('.services-owl .item').length > 1,
+        autoplayTimeout: 2500,
+        smartSpeed: 600,
+        nav: false,
+        dots: true,
+        mouseDrag: true,
+        touchDrag: true,
+        responsive: {
+            0: {
+                items: 1,
+                loop: $('.services-owl .item').length > 1
+            },
+            576: {
+                items: 2,
+                loop: $('.services-owl .item').length > 2
+            },
+            768: {
+                items: 3,
+                loop: $('.services-owl .item').length > 3
+            },
+            1200: {
+                items: 4,
+                loop: $('.services-owl .item').length > 4
+            }
+        }
+    });
+    // Slider Start End
+
 });

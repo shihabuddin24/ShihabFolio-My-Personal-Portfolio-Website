@@ -33,6 +33,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     --dark: #2C3E50;
 }
 
+/* Header Section Start */
 .navbar-toggler {
     border: none;
 }
@@ -112,7 +113,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     background: var(--deep-primary);
     color: var(--light);
 }
+/* Header Section End */
 
+/* Hero Section Start */
 .hero-section {
     background: var(--secondary);
 }
@@ -129,6 +132,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 
 .hero-rating i {
     color: var(--primary);
+    font-weight: 100;
 }
 
 .hero-img-area {
@@ -143,25 +147,31 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     max-height: 350px;
     object-fit: cover;
 }
+/* Hero Section End */
 
-/* Section Title */
+/* Services Section Start */
 .section-title {
     font-weight: 700;
     color: var(--dark);
 }
 
-/* Services */
-.service-card {
-    background: var(--light);
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: 0.3s;
+/* .services-owl .item {
+    padding: 10px;
 }
 
-.service-card:hover {
-    transform: translateY(-5px);
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
 }
+
+.service-card img {
+    width: 60px;
+    margin-bottom: 10px;
+} */
+ /* Services Section End */
 
 /* Projects */
 .project-box {
