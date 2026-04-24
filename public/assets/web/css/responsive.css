@@ -1,15 +1,7 @@
-:root {
-    --primary: #4CB6B6;
-    --deep-primary: #35a6a6;
-    --secondary: #EAF6F6;
-    --light: #F6FBFB;
-    --dark: #2C3E50;
-}
-
 @media (max-width: 991px) {
 
     .navbar-collapse {
-        background: var(--light);
+        background: #F6FBFB;
         padding: 15px;
         margin-top: 10px;
         border-radius: 10px;
@@ -22,25 +14,29 @@
     .header-logo {
         height: 35px;
     }
-}
-
-@media (max-width: 992px) {
 
     .hero-title {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .hero-section {
         text-align: center;
     }
 
+    .hero-img-area {
+        margin-top: 12px;
+    }
+
     .hero-img {
-        margin-top: 30px;
-        max-height: 250px;
+        max-height: 300px;
     }
 }
 
 @media (max-width: 768px) {
+
+    .hero-img {
+        max-height: 250px;
+    }
 
     .footer {
         text-align: center;
@@ -54,22 +50,15 @@
 @media (max-width: 576px) {
 
     .hero-title {
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    .hero-img {
+        max-height: 200px;
     }
 
     .custom-btn {
         padding: 6px 14px;
         font-size: 14px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .project-box {
-        height: 100px;
-    }
-
-    .service-card {
-        text-align: center;
     }
 }

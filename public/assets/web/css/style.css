@@ -33,7 +33,6 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     --dark: #2C3E50;
 }
 
-/* Navbar */
 .navbar-toggler {
     border: none;
 }
@@ -92,7 +91,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 }
 
 .header-logo {
-    height: 45px;
+    max-height: 45px;
     width: 100%;
     object-fit: cover;
     transition: all 0.3s ease;
@@ -102,7 +101,6 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     transform: scale(1.05);
 }
 
-/* Button */
 .custom-btn {
     background: var(--primary);
     color: var(--light);
@@ -115,40 +113,35 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: var(--light);
 }
 
-/* Hero */
 .hero-section {
     background: var(--secondary);
 }
 
 .hero-title {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--dark);
 }
 
-.hero-text {
-    margin-top: 15px;
-    color: #555;
+.highlight-color {
+    color: var(--primary);
+}
+
+.hero-rating i {
+    color: var(--primary);
 }
 
 .hero-img-area {
     background-image: url('/assets/images/blur.png');
-    width: 450px;
-    height: 450px;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
     border-radius: 50%;
+    overflow: hidden;
 }
 
 .hero-img {
-    height: 400px;
+    max-height: 350px;
     object-fit: cover;
-    border-bottom: 2px solid var(--primary);
 }
 
 /* Section Title */
