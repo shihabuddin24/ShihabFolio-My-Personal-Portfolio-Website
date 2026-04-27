@@ -20,8 +20,7 @@
                     </p>
                     <a href="#" class="btn custom-btn mt-2">Leave a Review</a>
                     <p class="hero-rating mt-4">
-                        Avg Rating: <i class="fa-regular fa-star"></i> 4.9/5 (<span class="animate-counter">200</span>+
-                        Reviews)
+                        Avg Rating: <i class="fa-regular fa-star"></i> 4.9/5 (<span class="animate-counter">200</span>+ Reviews)
                     </p>
                 </div>
 
@@ -37,12 +36,11 @@
             <h2 class="section-title">My Services</h2>
             <div class="owl-carousel services-owl mt-4">
 
-                <!-- Service 1 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Laravel">
                         <h5>Laravel Development</h5>
-                        <p>Secure and scalable backend systems with Laravel.</p>
+                        <p class="text-secondary">Secure and scalable backend systems with Laravel.</p>
                     </div>
                 </div>
 
@@ -54,7 +52,6 @@
                     </div>
                 </div>
 
-                <!-- Service 7 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Tailwind">
@@ -71,7 +68,6 @@
                     </div>
                 </div>
 
-                <!-- Service 3 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="API">
@@ -80,7 +76,6 @@
                     </div>
                 </div>
 
-                <!-- Service 4 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="JavaScript">
@@ -89,7 +84,6 @@
                     </div>
                 </div>
 
-                <!-- Service 5 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Ecommerce">
@@ -98,7 +92,6 @@
                     </div>
                 </div>
 
-                <!-- Service 6 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
@@ -107,7 +100,6 @@
                     </div>
                 </div>
 
-                <!-- Service 7 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Performance">
@@ -116,7 +108,6 @@
                     </div>
                 </div>
 
-                <!-- Service 8 -->
                 <div class="item">
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="SaaS">
