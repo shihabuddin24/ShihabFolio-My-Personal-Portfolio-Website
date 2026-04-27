@@ -226,14 +226,19 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .p5 { background: #74b9ff; }
 .p6 { background: #b2bec3; }
 
-/* Skills */
+/* Skills Section Start */
+.experience-left {
+    border-right: 2px solid var(--primary);
+}
+
 .timeline {
     list-style: none;
-    padding: 0;
+    padding: 0 10px;
+    text-align: right;
 }
 
 .timeline li {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
 }
 
 .timeline span {
@@ -241,8 +246,28 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: gray;
 }
 
-.skill {
+
+.skill-right .skill {
+    position: relative;
     margin-bottom: 15px;
+    padding: 0 10px;
+}
+
+.skill-right .skill::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 30px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .progress {
@@ -253,8 +278,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .progress-bar {
     background: var(--primary);
 }
+/* Skills Section End */
 
-/* Testimonials */
+/* Testimonials Section Start */
 .testimonial-card {
     background: var(--light);
     padding: 20px;

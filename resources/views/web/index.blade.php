@@ -153,7 +153,7 @@
 
             <div class="row mt-5">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 experience-left">
                     <ul class="timeline">
                         <li>
                             <h6>Project Source Editing</h6>
@@ -174,30 +174,30 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 skill-right">
                     <div class="skill">
-                        <p>Design</p>
+                        <p>Design <span>75%</span></p>
                         <div class="progress">
                             <div class="progress-bar" style="width:75%"></div>
                         </div>
                     </div>
 
                     <div class="skill">
-                        <p>Database</p>
+                        <p>Database <span>90%</span></p>
                         <div class="progress">
                             <div class="progress-bar" style="width:90%"></div>
                         </div>
                     </div>
 
                     <div class="skill">
-                        <p>Coding</p>
+                        <p>Coding <span>85%</span></p>
                         <div class="progress">
                             <div class="progress-bar" style="width:85%"></div>
                         </div>
                     </div>
 
                     <div class="skill">
-                        <p>Skills</p>
+                        <p>Skills <span>95%</span></p>
                         <div class="progress">
                             <div class="progress-bar" style="width:95%"></div>
                         </div>
@@ -208,31 +208,209 @@
         </div>
     </section>
 
+    <section class="faq-section py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Frequently Asked Questions</h2>
+
+            <div class="accordion mt-4" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What services do you offer?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I offer web development services including Laravel, Bootstrap, Tailwind CSS, PHP, REST API,
+                            JavaScript, E-commerce solutions, Database design, Performance optimization, and SaaS
+                            development.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is your experience level?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            I have over 5 years of experience in web development, working on various projects ranging
+                            from small business websites to large-scale applications.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How can I contact you for a project?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact me through the contact form on this website or email me directly at
+                            <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            How can I contact you for a project?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact me through the contact form on this website or email me directly at
+                            <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            How can I contact you for a project?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can contact me through the contact form on this website or email me directly at
+                            <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="testimonial-section py-5">
         <div class="container text-center">
             <h2 class="section-title">Testimonials</h2>
 
-            <div class="row mt-4">
-                <div class="col-lg-4 col-md-6 mb-4">
+            <div class="owl-carousel testimonial-owl mt-4">
+
+                <div class="item">
                     <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <h6>John Doe</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
                     <div class="testimonial-card">
-                        <p>Great developer! Highly recommended for web projects.</p>
-                        <h6>Alex Smith</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="item">
                     <div class="testimonial-card">
-                        <p>Very professional and skilled Laravel developer.</p>
-                        <h6>Sarah Lee</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
                     </div>
                 </div>
+
+                <div class="item">
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="testimonial-card">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
+                        <div>
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
+                            <h5>John Doe</h5>
+                        </div>
+                        <span>Topal - <small>Web Developer</small></span>
+                        <div class="star-rating">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

@@ -55,6 +55,32 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.testimonial-owl').owlCarousel({
+        loop: $('.testimonial-owl .item').length > 1,
+        margin: 20,
+        autoplay: $('.testimonial-owl .item').length > 1,
+        autoplayTimeout: 2500,
+        smartSpeed: 600,
+        nav: false,
+        dots: true,
+        mouseDrag: true,
+        touchDrag: true,
+        responsive: {
+            0: {
+                items: 1,
+                loop: $('.testimonial-owl .item').length > 1
+            },
+            576: {
+                items: 2,
+                loop: $('.testimonial-owl .item').length > 2
+            },
+            992: {
+                items: 3,
+                loop: $('.testimonial-owl .item').length > 3
+            }
+        }
+    });
     // Slider Start End
 
 });
