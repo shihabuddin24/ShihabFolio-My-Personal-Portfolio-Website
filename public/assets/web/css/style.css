@@ -284,6 +284,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     border: 2px solid var(--secondary-border);
     border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    transition: border-color 0.3s ease;
+    overflow: hidden;
 }
 
 .testimonial-card p {
@@ -328,9 +331,71 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: var(--primary);
 }
 
+.testimonial-section .testimonial-owl .item:hover {
+    border: 1px solid var(--primary);
+}
+
+.testimonial-section .testimonial-owl .item::before,
+.testimonial-section .testimonial-owl .item::after {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    transition: all 0.4s linear;
+}
+
+.testimonial-section .testimonial-owl .item::before {
+    height: 2px;
+    width: 0;
+    top: 0;
+    right: 0;
+}
+
+.testimonial-section .testimonial-owl .item::after {
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.testimonial-section .testimonial-owl .item span::before,
+.testimonial-section .testimonial-owl .item span::after {
+    content: "";
+    position: absolute;
+    background: var(--primary);
+    transition: all 0.4s linear;
+}
+
+.testimonial-section .testimonial-owl .item span::before {
+    width: 2px;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.testimonial-section .testimonial-owl .item span::after {
+    width: 2px;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.testimonial-section .testimonial-owl .item:hover::before,
+.testimonial-section .testimonial-owl .item:hover::after {
+    width: 100%;
+}
+
+.testimonial-section .testimonial-owl .item:hover span::before,
+.testimonial-section .testimonial-owl .item:hover span::after {
+    height: 100%;
+}
 /* Testimonials Section End */
 
-/* Contacts */
+/* Contacts Section Start */
+.contact-left .map {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    overflow: hidden;
+}
 .contact-right .form-control {
     border: 1px solid var(--primary);
     border-radius: 6px;
@@ -349,8 +414,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .contact-right textarea.form-control {
     min-height: 80px;
 }
+/* Contacts Section End */
 
-/* Footer */
+/* Footer Section Start */
 .footer {
     background: var(--secondary);
     padding: 60px 0 20px;
@@ -377,7 +443,6 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     cursor: pointer;
 }
 
-/* Social */
 .footer-social a {
     display: inline-block;
     margin-right: 10px;
@@ -393,9 +458,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     background: var(--primary);
 }
 
-/* Bottom */
 .footer-bottom {
     border-top: 1px solid #444;
     padding-top: 15px;
     font-size: 14px;
 }
+/* Footer Section End */

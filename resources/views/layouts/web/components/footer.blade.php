@@ -48,7 +48,7 @@
         </div>
 
         <div class="footer-bottom text-center mt-4">
-            <p>© 2026 Shihab Uddin. All rights reserved.</p>
+            <p class="fw-bold text-secondary">© 2026 Shihab Uddin. All rights reserved.</p>
         </div>
     </div>
 </footer>

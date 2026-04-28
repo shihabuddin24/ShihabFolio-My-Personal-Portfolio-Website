@@ -330,22 +330,20 @@
     <section class="contact-section py-5">
         <div class="container">
             <div class="row contact-wrapper">
-
-                <!-- Left -->
                 <div class="col-lg-6 col-md-12 contact-left">
-                    <h2 class="section-title">CONTACT ME</h2>
-                    <p>
-                        Encrypted mihi islam assaovailable <br>
-                        and raveri iremen fonttrast
+                    <h2 class="section-title ms-2">CONTACT ME</h2>
+                    <p class="text-secondary ms-2">
+                        Encrypted mihi islam assaovailable. Lorem ipsum dolor sit amet consectetur <br>
+                        and raveri iremen fonttrast.
                     </p>
-
                     <div class="map">
                         <iframe src="https://www.google.com/maps?q=23.7576,90.3893&z=15&output=embed" width="100%"
-                            height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            height="180" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-md-12 contact-right">
+                <div class="col-lg-6 col-md-12 mt-4 mt-lg-0 contact-right">
                     <form action="" class="" method="POST">
                         @csrf
                         <div class="row">
@@ -369,7 +367,7 @@
                                 <label class="ms-2" for="message">{{ __('Write Message') }}</label>
                             </div>
                         </div>
-                        <button class="btn custom-btn" type="submit">Send Message</button>
+                        <button class="btn custom-btn" type="submit"><i class="fa-brands fa-telegram me-1"></i>Send Message</button>
                     </form>
                 </div>
 
