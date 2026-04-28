@@ -20,7 +20,7 @@
             </ul>
 
             <div class="button mt-2 mt-lg-0">
-                <a href="{{ asset('assets/files/shihab-uddin-cv.pdf') }}" download class="btn custom-btn fw-bold">Download CV</a>
+                <a href="{{ asset('assets/files/shihab-uddin-cv.pdf') }}" download class="btn custom-btn"><i class="fa-solid fa-download me-1"></i>Download CV</a>
             </div>
         </div>
     </div>
