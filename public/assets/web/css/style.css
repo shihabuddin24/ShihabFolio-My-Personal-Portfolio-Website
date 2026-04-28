@@ -31,7 +31,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     --secondary: #EAF6F6;
     --light: #F6FBFB;
     --dark: #2C3E50;
-    --text-secondary: #6c757d;
+    --secondary-border: #dfdfdf;
 }
 
 /* Header Section Start */
@@ -180,10 +180,6 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: var(--dark);
 }
 
-.services-owl .item .service-card p {
-    color: var(--text-secondary);
-}
-
 .owl-dots {
     display: flex;
     justify-content: center;
@@ -281,12 +277,58 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 /* Skills Section End */
 
 /* Testimonials Section Start */
-.testimonial-card {
+.testimonial-section .testimonial-owl .item {
     background: var(--light);
-    padding: 20px;
+    padding: 15px;
+    margin: 0 10px;
+    border: 2px solid var(--secondary-border);
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
 }
+
+.testimonial-card p {
+    padding: 10px !important;
+    border-radius: 10px !important;
+    background-color: #fff !important;
+}
+
+.testimonial-card .name-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.testimonial-card .name-img h5 {
+    color: var(--dark);
+    font-size: 18px;
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.owl-carousel .owl-item .testimonial-card img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: unset;
+}
+
+.testimonial-card span {
+    color: var(--dark);
+    margin-left: 38px;
+    font-size: 15px;
+}
+
+.testimonial-card .star-rating {
+    margin-top: 10px;
+}
+
+.testimonial-card .star-rating i {
+    color: var(--primary);
+}
+
+/* Testimonials Section End */
 
 /* Contacts */
 .contact-right .form-control {

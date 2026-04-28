@@ -48,7 +48,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Bootstrap">
                         <h5>Bootstrap UI Design</h5>
-                        <p>Responsive and modern UI using Bootstrap 5.</p>
+                        <p class="text-secondary">Responsive and modern UI using Bootstrap 5.</p>
                     </div>
                 </div>
 
@@ -56,7 +56,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Tailwind">
                         <h5>Tailwind CSS Design</h5>
-                        <p>Utility-first modern design with Tailwind CSS.</p>
+                        <p class="text-secondary">Utility-first modern design with Tailwind CSS.</p>
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="PHP">
                         <h5>PHP Development</h5>
-                        <p>Powerful server-side development using core PHP & frameworks.</p>
+                        <p class="text-secondary">Powerful server-side development using core PHP & frameworks.</p>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="API">
                         <h5>REST API</h5>
-                        <p>Robust APIs for mobile & web applications.</p>
+                        <p class="text-secondary">Robust APIs for mobile & web applications.</p>
                     </div>
                 </div>
 
@@ -80,7 +80,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="JavaScript">
                         <h5>JavaScript Development</h5>
-                        <p>Dynamic frontend interactions using modern JavaScript.</p>
+                        <p class="text-secondary">Dynamic frontend interactions using modern JavaScript.</p>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Ecommerce">
                         <h5>E-commerce</h5>
-                        <p>Complete online store solutions.</p>
+                        <p class="text-secondary">Complete online store solutions.</p>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
                         <h5>Database Design</h5>
-                        <p>MySQL & PostgreSQL optimized structure.</p>
+                        <p class="text-secondary">MySQL & PostgreSQL optimized structure.</p>
                     </div>
                 </div>
 
@@ -104,7 +104,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Performance">
                         <h5>Performance Optimization</h5>
-                        <p>Speed optimization for scalable apps.</p>
+                        <p class="text-secondary">Speed optimization for scalable apps.</p>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                     <div class="service-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="SaaS">
                         <h5>SaaS Development</h5>
-                        <p>Modern SaaS applications with scalable architecture.</p>
+                        <p class="text-secondary">Modern SaaS applications with scalable architecture.</p>
                     </div>
                 </div>
 
@@ -300,117 +300,29 @@
     <section class="testimonial-section py-5">
         <div class="container text-center">
             <h2 class="section-title">Testimonials</h2>
-
             <div class="owl-carousel testimonial-owl mt-4">
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                @for ($i = 1; $i <= 8; $i++)
+                    <div class="item">
+                        <div class="testimonial-card">
+                            <p class="text-secondary">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae tempore aliquid assumenda labore molestias magni tenetur officia, ullam ipsum aliquam maxime optio?
+                            </p>
+                            <div class="name-img">
+                                <img src="{{ asset('assets/images/default-user.png') }}" alt="Database">
+                                <h5>Shihab Uddin Rabbi</h5>
+                            </div>
+                            <span class="fw-bold mt-5">Topal - <small class="text-secondary">Web Developer</small></span>
+                            <div class="star-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <div class="testimonial-card">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequuntur?</p>
-                        <div>
-                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="Database">
-                            <h5>John Doe</h5>
-                        </div>
-                        <span>Topal - <small>Web Developer</small></span>
-                        <div class="star-rating">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                </div>
-
+                @endfor
             </div>
         </div>
     </section>

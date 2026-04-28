@@ -1,4 +1,4 @@
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
 
     .navbar-collapse {
         background: #F6FBFB;
@@ -32,22 +32,33 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
 
     .hero-img {
         max-height: 250px;
     }
 
-    .footer {
-        text-align: center;
+    .testimonial-card .name-img {
+        gap: 5px;
     }
 
-    .footer-social a {
-        margin: 5px;
+    .owl-carousel .owl-item .testimonial-card img {
+        width: 38px;
+        height: 38px;
     }
+
+    .testimonial-card .name-img h5 {
+        font-size: 14px;
+    }
+
+    .testimonial-card span {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
 
     .hero-title {
         font-size: 24px;
