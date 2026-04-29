@@ -367,7 +367,7 @@
                                 <label class="ms-2" for="message">{{ __('Write Message') }}</label>
                             </div>
                         </div>
-                        <button class="btn custom-btn" type="submit"><i class="fa-brands fa-telegram me-1"></i>Send Message</button>
+                        <button class="btn custom-btn" type="submit"><i class="fa-solid fa-location-arrow me-1"></i>Send Message</button>
                     </form>
                 </div>
 
