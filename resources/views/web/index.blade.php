@@ -346,6 +346,40 @@
         </div>
     </section>
 
+    <section class="blog-section py-5">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <h2 class="section-title">My Blogs</h2>
+                <a href="#" class="btn custom-btn">View All<i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="main-blog"></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="main-blog"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="latest-blog"></div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="latest-blog"></div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="latest-blog"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="contact-section py-5">
         <div class="container">
             <div class="row contact-wrapper">

@@ -294,13 +294,12 @@ button:focus,
 
 /* Services Section End */
 
-/* Projects */
+/* Projects Section Start */
 .project-box {
     height: 120px;
     border-radius: 10px;
 }
 
-/* Different colors */
 .p1 {
     background: #dfe6e9;
 }
@@ -324,6 +323,7 @@ button:focus,
 .p6 {
     background: #b2bec3;
 }
+/* Projects Section End */
 
 /* Skills Section Start */
 .experience-left {
@@ -539,6 +539,30 @@ button:focus,
 }
 
 /* Testimonials Section End */
+
+/* Blog Section Start */
+.blog-section .main-blog{
+    border: 2px solid var(--primary);
+    height: 280px;
+    border-radius: 10px;
+    gap: 3;
+}
+
+.blog-section .latest-blog{
+    border: 2px solid var(--primary);
+    height: 86px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-section .btn i {
+    transition: .3s ease-in-out;
+}
+
+.blog-section .btn:hover i {
+    transform: translateX(3px);
+}
+/* Blog Section End */
 
 /* Contacts Section Start */
 .contact-left .map {
