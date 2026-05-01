@@ -23,9 +23,9 @@
                 <h5 class="footer-title fw-bolder fs-5">Social Media</h5>
                 <p class="text-secondary social-note">Stay connected on my social media for the latest updates, tech tips, and new contents.</p>
                 <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-github fs-6"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-facebook fs-6"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-instagram fs-6"></i></a>
-                    <a href="#" target="_blank"><i class="fab fa-github fs-6"></i></a>
                     <a href="#" target="_blank"><i class="fab fa-whatsapp fs-6"></i></a>
                 </div>
             </div>

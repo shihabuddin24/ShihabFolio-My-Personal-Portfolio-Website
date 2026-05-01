@@ -295,6 +295,14 @@ button:focus,
 /* Services Section End */
 
 /* Projects Section Start */
+.projects-section .btn i{
+    transition: .3s ease-in-out;
+}
+
+.projects-section .btn:hover i{
+    transform: translateX(3px);
+}
+
 .project-box {
     height: 120px;
     border-radius: 10px;
@@ -644,8 +652,8 @@ button:focus,
     padding: 6px 12px;
     background: var(--dark);
     color: var(--light);
-    height: 34px;
-    width: 34px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     font-size: 14px;
 }

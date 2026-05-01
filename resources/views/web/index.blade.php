@@ -162,6 +162,10 @@
                     <div class="project-box p6"></div>
                 </div>
             </div>
+
+            <div class="mt-4">
+                <a href="#" class="btn custom-btn">All Projects<i class="fa-solid fa-arrow-right ms-1"></i></a>
+            </div>
         </div>
     </section>
 
