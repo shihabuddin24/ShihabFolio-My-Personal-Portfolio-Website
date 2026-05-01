@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row d-flex justify-content-centerng align-items-center">
                 <div class="col-lg-6">
-                    <small class="hero-subtitle fs-6 text-dark text-secondary">Helping Businesses Scale Online</small>
+                    <small class="hero-subtitle fs-6"><i class="fa-solid fa-rocket me-1"></i>Helping a Business Scale Online</small>
                     <h1 class="hero-title mt-1">
                         Hi, I'm <span class="highlight-color">Shihab Uddin.</span> <br> Expert in Web Development.
                     </h1>

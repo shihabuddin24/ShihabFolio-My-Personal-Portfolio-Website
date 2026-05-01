@@ -127,6 +127,13 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: var(--dark);
 }
 
+.hero-subtitle {
+    color: #fff;
+    background-color: var(--dark);
+    border-radius: 20px;
+    padding: 4px 10px;
+}
+
 .highlight-color {
     color: var(--primary);
 }
