@@ -16,11 +16,17 @@ a {
     text-decoration: none;
 }
 
-a, button, .btn, .custom-btn {
+a,
+button,
+.btn,
+.custom-btn {
     transition: all .3s ease-in-out;
 }
 
-a:focus, button:focus, .btn:focus, .btn:active:focus {
+a:focus,
+button:focus,
+.btn:focus,
+.btn:active:focus {
     outline: none;
     box-shadow: none;
 }
@@ -39,11 +45,14 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     border: none;
 }
 
-.navbar-toggler, .fa-bars {
+.navbar-toggler,
+.fa-bars {
     color: var(--primary);
 }
 
-.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus {
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
     outline: none;
     box-shadow: none;
 }
@@ -55,7 +64,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     top: 0;
     width: 100%;
     z-index: 9999;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
 .nav-link {
@@ -87,7 +96,8 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     transition: transform .3s ease-in-out;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     transform: scaleX(1);
     width: 100%;
 }
@@ -155,6 +165,74 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     max-height: 350px;
     object-fit: cover;
 }
+
+.hero-hanging-area {
+    position: relative;
+}
+
+.hanging-logo {
+    position: absolute;
+    z-index: 20;
+    will-change: transform;
+}
+
+.hanging-line {
+    width: 2px;
+    height: 170px;
+    background: var(--deep-primary);
+    display: block;
+    margin: auto;
+    transform: scaleX(.4);
+    transform-origin: center;
+    opacity: .4;
+}
+
+.hanging-box img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    opacity: .80;
+}
+
+.laravel-hanging {
+    left: 55px;
+    top: -55px;
+    animation: laravelMove 5s ease-in-out infinite;
+}
+
+.php-hanging {
+    right: 75px;
+    top: -75px;
+    animation: phpMove 5s ease-in-out infinite;
+}
+
+@keyframes laravelMove {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes phpMove {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(25px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
 /* Hero Section End */
 
 /* Services Section Start */
@@ -213,7 +291,8 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     background: var(--primary);
     transform: scale(1.4);
 }
- /* Services Section End */
+
+/* Services Section End */
 
 /* Projects */
 .project-box {
@@ -222,12 +301,29 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 }
 
 /* Different colors */
-.p1 { background: #dfe6e9; }
-.p2 { background: #55efc4; }
-.p3 { background: #a29bfe; }
-.p4 { background: #fab1a0; }
-.p5 { background: #74b9ff; }
-.p6 { background: #b2bec3; }
+.p1 {
+    background: #dfe6e9;
+}
+
+.p2 {
+    background: #55efc4;
+}
+
+.p3 {
+    background: #a29bfe;
+}
+
+.p4 {
+    background: #fab1a0;
+}
+
+.p5 {
+    background: #74b9ff;
+}
+
+.p6 {
+    background: #b2bec3;
+}
 
 /* Skills Section Start */
 .experience-left {
@@ -284,6 +380,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .progress-bar {
     background: var(--primary);
 }
+
 /* Skills Section End */
 
 /* Faq Section Start */
@@ -325,6 +422,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     transform: rotate(180deg);
     filter: brightness(0) saturate(100%) invert(48%) sepia(61%) saturate(400%) hue-rotate(140deg) brightness(90%) contrast(95%);
 }
+
 /* Faq Section End */
 
 /* Testimonials Section Start */
@@ -439,19 +537,22 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .testimonial-section .testimonial-owl .item:hover span::after {
     height: 100%;
 }
+
 /* Testimonials Section End */
 
 /* Contacts Section Start */
 .contact-left .map {
     border: 1px solid var(--primary);
-    border-radius: 10px;
+    border-radius: 7px;
     overflow: hidden;
 }
+
 .contact-right .form-control {
     border: 1px solid var(--primary);
     border-radius: 6px;
     box-shadow: none;
 }
+
 .contact-right label {
     color: var(--dark);
 }
@@ -465,6 +566,7 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .contact-right textarea.form-control {
     min-height: 80px;
 }
+
 /* Contacts Section End */
 
 /* Footer Section Start */
@@ -496,14 +598,16 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: var(--deep-primary);
 }
 
-.footer-list li span, .footer-list li a {
+.footer-list li span,
+.footer-list li a {
     font-size: 14px;
     cursor: pointer;
     font-weight: 200;
     transition: all 0.3s ease-in-out;
 }
 
-.footer-list li span:hover, .footer-list li a:hover {
+.footer-list li span:hover,
+.footer-list li a:hover {
     color: var(--deep-primary) !important;
 }
 
@@ -535,4 +639,5 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
 .footer-bottom p {
     font-weight: 300;
 }
+
 /* Footer Section End */

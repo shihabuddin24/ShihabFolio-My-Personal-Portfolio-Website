@@ -31,6 +31,10 @@
         max-height: 300px;
     }
 
+    .hero-hanging-area {
+        display: none;
+    }
+
     .experience-left {
         border-right: unset;
         margin-bottom: 20px;

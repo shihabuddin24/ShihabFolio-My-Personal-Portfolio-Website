@@ -25,8 +25,25 @@
                     </p>
                 </div>
 
-                <div class="col-lg-6 text-center hero-img-area">
-                    <img src="{{ asset('assets/images/author.png') }}" class="hero-img" alt="Profile">
+                <div class="col-lg-6">
+                    <div class="hero-hanging-area">
+                        <div class="hanging-logo laravel-hanging">
+                            <span class="hanging-line"></span>
+                            <div class="hanging-box">
+                                <img src="{{ asset('assets/images/laravel-logo.png') }}" alt="Laravel">
+                            </div>
+                        </div>
+
+                        <div class="hanging-logo php-hanging">
+                            <span class="hanging-line"></span>
+                            <div class="hanging-box">
+                                <img src="{{ asset('assets/images/php-logo.png') }}" alt="PHP">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img-area text-center">
+                        <img src="{{ asset('assets/images/author.png') }}" class="hero-img" alt="Profile">
+                    </div>
                 </div>
             </div>
         </div>
