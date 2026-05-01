@@ -267,7 +267,7 @@ button:focus,
 .services-owl .item .service-card h5 {
     font-size: 18px;
     font-weight: bold;
-    color: var(--primary);
+    color: var(--dark);
 }
 
 .owl-dots {
