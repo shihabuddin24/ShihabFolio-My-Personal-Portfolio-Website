@@ -242,6 +242,9 @@ a:focus, button:focus, .btn:focus, .btn:active:focus {
     color: gray;
 }
 
+.skill-right {
+    padding-right: 10%;
+}
 
 .skill-right .skill {
     position: relative;

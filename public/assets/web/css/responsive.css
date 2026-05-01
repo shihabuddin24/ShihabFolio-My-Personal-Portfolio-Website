@@ -30,12 +30,29 @@
     .hero-img {
         max-height: 300px;
     }
+
+    .experience-left {
+        border-right: unset;
+        margin-bottom: 20px;
+    }
+
+    .timeline {
+        text-align: center;
+    }
+
+    .skill-right .skill::before {
+        display: none;
+    }
 }
 
 @media (max-width: 767.98px) {
 
     .hero-img {
         max-height: 250px;
+    }
+
+    .skill-right {
+        padding-right: unset;
     }
 
     .testimonial-card .name-img {
