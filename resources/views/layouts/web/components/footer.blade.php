@@ -13,10 +13,10 @@
             <div class="col-lg-4 col-md-6">
                 <h5 class="footer-title fw-bolder fs-5">Quick Links</h5>
                 <ul class="footer-list">
-                    <li><a href="#" class="text-secondary">Home</a></li>
-                    <li><a href="#" class="text-secondary">About</a></li>
-                    <li><a href="#" class="text-secondary">Privacy Policy</a></li>
-                    <li><a href="#" class="text-secondary">Terms & Conditions</a></li>
+                    <li><a href="{{ url('/') }}" class="text-secondary">Home</a></li>
+                    <li><a href="{{ url('/about') }}" class="text-secondary">About</a></li>
+                    <li><a href="{{ url('/privacy') }}" class="text-secondary">Privacy Policy</a></li>
+                    <li><a href="{{ url('/terms') }}" class="text-secondary">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-12">

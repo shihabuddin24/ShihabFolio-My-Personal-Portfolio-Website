@@ -107,11 +107,6 @@ button:focus,
     max-height: 45px;
     width: 100%;
     object-fit: cover;
-    transition: all 0.3s ease;
-}
-
-.navbar-brand:hover .header-logo {
-    transform: scale(1.05);
 }
 
 .custom-btn {
