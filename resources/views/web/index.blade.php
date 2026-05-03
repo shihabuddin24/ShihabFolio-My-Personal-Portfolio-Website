@@ -493,34 +493,80 @@
 
     <section class="blog-section py-5">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
+
+            <div class="d-flex align-items-center justify-content-between mb-4">
                 <h2 class="section-title">My Blogs</h2>
-                <a href="{{ url('/blogs') }}" class="btn custom-btn">View All<i class="fa-solid fa-arrow-right ms-1"></i></a>
+                <a href="#" class="view-all-btn">
+                    View All <i class="fa-solid fa-arrow-right ms-1"></i>
+                </a>
             </div>
-            <div class="row mt-4">
+
+            <div class="row g-4">
+
+                <!-- LEFT MAIN BLOGS -->
                 <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="main-blog"></div>
+                    <div class="row g-4">
+
+                        <!-- MAIN BLOG CARD -->
+                        <div class="col-md-6">
+                            <div class="main-blog-card">
+                                <img src="https://picsum.photos/600/400" alt="">
+                                <div class="overlay-content">
+                                    <span class="date">04 May 2026</span>
+                                    <h4>How to Become a Full Stack Developer</h4>
+                                    <p>Learn step by step roadmap to become a modern full stack developer...</p>
+                                    <a href="#" class="read-more">Read More →</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="main-blog"></div>
+
+                        <div class="col-md-6">
+                            <div class="main-blog-card">
+                                <img src="https://picsum.photos/601/400" alt="">
+                                <div class="overlay-content">
+                                    <span class="date">03 May 2026</span>
+                                    <h4>Laravel Advanced Tips & Tricks</h4>
+                                    <p>Boost your Laravel skills with real world advanced techniques...</p>
+                                    <a href="#" class="read-more">Read More →</a>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
+
+                <!-- RIGHT RECENT BLOGS -->
                 <div class="col-lg-4">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="latest-blog"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="latest-blog"></div>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="latest-blog"></div>
+
+                    <div class="recent-blog-card">
+                        <img src="https://picsum.photos/120/120" alt="">
+                        <div class="recent-content">
+                            <span class="date">02 May 2026</span>
+                            <h6>Vue JS Basics Guide</h6>
+                            <a href="#">Read More →</a>
                         </div>
                     </div>
+
+                    <div class="recent-blog-card">
+                        <img src="https://picsum.photos/121/120" alt="">
+                        <div class="recent-content">
+                            <span class="date">01 May 2026</span>
+                            <h6>AJAX with Laravel</h6>
+                            <a href="#">Read More →</a>
+                        </div>
+                    </div>
+
+                    <div class="recent-blog-card">
+                        <img src="https://picsum.photos/122/120" alt="">
+                        <div class="recent-content">
+                            <span class="date">30 Apr 2026</span>
+                            <h6>Bootstrap UI Tips</h6>
+                            <a href="#">Read More →</a>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
     </section>
