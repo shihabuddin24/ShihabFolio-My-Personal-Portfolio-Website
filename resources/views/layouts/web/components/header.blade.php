@@ -12,15 +12,35 @@
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                <li class="nav-item dropdown custom-dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        Pages <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li>
+                            <a class="dropdown-item fw-bold" href="">
+                                Projects<i class="fa-solid fa-angle-right float-end"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold active" href="">
+                                Blogs<i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item fw-bold" href="">
+                                About<i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
 
             <div class="button mt-2 mt-lg-0">
-                <a href="{{ asset('assets/files/shihab-uddin-cv.pdf') }}" download class="btn custom-btn"><i class="fa-solid fa-download me-1"></i>Download CV</a>
+                <a href="{{ asset('assets/files/shihab-uddin-cv.pdf') }}" download class="btn custom-btn"><i
+                        class="fa-solid fa-download me-1"></i>Download CV</a>
             </div>
         </div>
     </div>

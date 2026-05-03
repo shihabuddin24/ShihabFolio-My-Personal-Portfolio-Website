@@ -83,4 +83,22 @@ $(document).ready(function () {
     });
     // Slider Start End
 
+    // Custom Dropdown Start
+    const $dropdown = $('.custom-dropdown');
+    const $trigger = $dropdown.find('.nav-link');
+
+    $trigger.on('click', function (e) {
+        if ($(window).width() < 992) {
+            e.preventDefault();
+            $dropdown.toggleClass('active');
+        }
+    });
+
+    $(document).on('click', function (e) {
+        if (!$dropdown.is(e.target) && $dropdown.has(e.target).length === 0) {
+            $dropdown.removeClass('active');
+        }
+    });
+    // Custom Dropdown End
+
 });

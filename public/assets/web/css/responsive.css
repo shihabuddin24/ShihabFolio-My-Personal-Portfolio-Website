@@ -15,6 +15,18 @@
         height: 35px;
     }
 
+    .custom-dropdown-menu {
+        position: static;
+        transform: none;
+        max-width: 25%;
+        border-radius: 8px;
+        display: none;
+    }
+
+    .custom-dropdown.active .custom-dropdown-menu {
+        display: block;
+    }
+
     .hero-title {
         font-size: 28px;
     }
@@ -92,5 +104,16 @@
     .custom-btn {
         padding: 6px 14px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 299px) {
+
+    .header-logo {
+        height: 27px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px !important;
     }
 }

@@ -125,6 +125,56 @@ button:focus,
     background: var(--deep-primary);
     color: var(--light);
 }
+
+.custom-dropdown {
+    position: relative;
+}
+
+.custom-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--light);
+    border: 1px solid var(--secondary-border);
+    border-radius: 8px;
+    min-width: 170px;
+    padding: 8px;
+    display: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-dropdown:hover .custom-dropdown-menu {
+    display: block;
+    top: 100%;
+}
+
+.custom-dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin: 4px 0px;
+    border-radius: 8px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-dropdown-menu .dropdown-item:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.custom-dropdown-menu .dropdown-item.active {
+    color: var(--primary);
+    background: var(--secondary);
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
 /* Header Section End */
 
 /* Hero Section Start */
@@ -139,7 +189,8 @@ button:focus,
 }
 
 .hero-subtitle {
-    color: #fff;
+    display: inline-block;
+    color: var(--light);
     background-color: var(--dark);
     border-radius: 20px;
     padding: 4px 10px;
@@ -310,7 +361,7 @@ button:focus,
 }
 
 .project-card {
-    background: #fff;
+    background: var(--light);
     border: 1px solid var(--secondary-border);
     border-radius: 10px;
     overflow: hidden;
@@ -486,7 +537,7 @@ button:focus,
 }
 
 .accordion-body {
-    background: #fff;
+    background: var(--light);
     color: var(--dark);
 }
 
@@ -524,7 +575,7 @@ button:focus,
 .testimonial-card p {
     padding: 10px !important;
     border-radius: 10px !important;
-    background-color: #fff !important;
+    background-color: var(--light) !important;
 }
 
 .testimonial-card .name-img {
