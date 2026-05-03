@@ -190,7 +190,7 @@
 
                             <div class="project-footer d-flex justify-content-between mt-3">
                                 <small>Full Stack Developer</small>
-                                <a href="#">Explore<i class="fa-solid fa-angle-right"></i></a>
+                                <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,85 @@
 
                             <div class="project-footer d-flex align-items-center justify-content-between mt-3">
                                 <small>Backend Developer</small>
-                                <a href="#">Explore<i class="fa-solid fa-angle-right"></i></a>
+                                <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
+
+                        <div class="project-content">
+                            <h5>E-commerce Platform</h5>
+
+                            <p class="text-secondary small">
+                                Online store with cart, payment integration and admin dashboard.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>Stripe</span>
+                            </div>
+
+                            <div class="project-footer d-flex align-items-center justify-content-between mt-3">
+                                <small>Backend Developer</small>
+                                <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
+
+                        <div class="project-content">
+                            <h5>E-commerce Platform</h5>
+
+                            <p class="text-secondary small">
+                                Online store with cart, payment integration and admin dashboard.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>Stripe</span>
+                            </div>
+
+                            <div class="project-footer d-flex align-items-center justify-content-between mt-3">
+                                <small>Backend Developer</small>
+                                <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
+
+                        <div class="project-content">
+                            <h5>E-commerce Platform</h5>
+
+                            <p class="text-secondary small">
+                                Online store with cart, payment integration and admin dashboard.
+                            </p>
+
+                            <div class="tech-stack">
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                                <span>Stripe</span>
+                            </div>
+
+                            <div class="project-footer d-flex align-items-center justify-content-between mt-3">
+                                <small>Backend Developer</small>
+                                <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -224,8 +302,8 @@
 
             </div>
 
-            <div class="mt-4">
-                <a href="#" class="btn custom-btn">
+            <div class="mt-5">
+                <a href="{{ url('/projects') }}" class="btn custom-btn">
                     All Projects <i class="fa-solid fa-arrow-right ms-1"></i>
                 </a>
             </div>

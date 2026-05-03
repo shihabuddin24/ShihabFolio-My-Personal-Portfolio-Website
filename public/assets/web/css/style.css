@@ -368,6 +368,7 @@ button:focus,
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
     transition: all 0.3s ease-in-out;
     text-align: left;
+    margin: 4px;
 }
 
 .project-card:hover {
@@ -458,6 +459,50 @@ button:focus,
     border-radius: 10px;
 }
 /* Projects Section End */
+
+/* Pagination Start */
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    display: flex;
+    gap: 8px;
+    padding: 0;
+}
+
+.pagination li a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid var(--secondary-border);
+    color: var(--secondary-color);
+    background: var(--light);
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination li a:hover {
+    background: var(--deep-primary);
+    color: var(--light);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.2);
+}
+
+.pagination li a.active {
+    background: var(--deep-primary);
+    color: var(--light);
+    border: none;
+    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+}
+
+.pagination li:first-child a,
+.pagination li:last-child a {
+    font-weight: bold;
+}
+/* Pagination End */
 
 /* Skills Section Start */
 .experience-left {

@@ -116,4 +116,13 @@
     .hero-subtitle {
         font-size: 14px !important;
     }
+
+    .pagination {
+        gap: 4px;
+    }
+
+    .pagination li a {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
 }
