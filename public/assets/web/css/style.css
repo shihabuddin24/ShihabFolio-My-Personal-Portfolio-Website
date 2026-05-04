@@ -496,14 +496,14 @@ button:focus,
     color: var(--light);
     border-color: var(--primary);
     transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.2);
+    box-shadow: 0 0 15px rgba(76, 182, 182, 0.6);
 }
 
 .pagination li a.active {
     background: var(--deep-primary);
     color: var(--light);
     border: none;
-    box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+    box-shadow: 0 0 15px rgba(76, 182, 182, 0.6);
 }
 
 .pagination li:first-child a,

@@ -34,6 +34,6 @@ Route::get('/blogs', function () {
     return view('web.blogs.index');
 });
 
-Route::get('/blog-detils', function () {
+Route::get('/blog-details', function () {
     return view('web.blogs.view');
 });

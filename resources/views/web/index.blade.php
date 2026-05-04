@@ -462,7 +462,7 @@
         <div class="container">
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <h2 class="section-title">My Blogs</h2>
-                <a href="#" class="btn custom-btn"> View All <i class="fa-solid fa-arrow-right ms-1"></i>
+                <a href="{{ url('/blogs') }}" class="btn custom-btn"> View All <i class="fa-solid fa-arrow-right ms-1"></i>
                 </a>
             </div>
 
@@ -476,7 +476,7 @@
                                     <span class="date"><i class="fa-regular fa-clock me-1"></i>04 May 2026</span>
                                     <h4>How to Become a Full Stack Developer</h4>
                                     <p>Learn step by step roadmap to become a modern full stack developer...</p>
-                                    <a href="#" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                                    <a href="{{ url('/blog-details') }}" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -488,7 +488,7 @@
                                     <span class="date"><i class="fa-regular fa-clock me-1"></i>03 May 2026</span>
                                     <h4>Laravel Advanced Tips & Tricks</h4>
                                     <p>Boost your Laravel skills with real world advanced techniques...</p>
-                                    <a href="#" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
+                                    <a href="{{ url('/blog-details') }}" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -501,7 +501,7 @@
                         <div class="recent-content">
                             <span class="date"><i class="fa-regular fa-clock me-1"></i>02 May 2026</span>
                             <h6>Vue JS Basics Guide</h6>
-                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
 
@@ -510,7 +510,7 @@
                         <div class="recent-content">
                             <span class="date"><i class="fa-regular fa-clock me-1"></i>01 May 2026</span>
                             <h6>AJAX with Laravel</h6>
-                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
 
@@ -519,7 +519,7 @@
                         <div class="recent-content">
                             <span class="date"><i class="fa-regular fa-clock me-1"></i>30 Apr 2026</span>
                             <h6>Bootstrap UI Tips</h6>
-                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
