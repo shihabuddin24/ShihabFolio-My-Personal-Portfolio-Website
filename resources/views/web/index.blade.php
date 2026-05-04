@@ -493,80 +493,69 @@
 
     <section class="blog-section py-5">
         <div class="container">
-
             <div class="d-flex align-items-center justify-content-between mb-4">
                 <h2 class="section-title">My Blogs</h2>
-                <a href="#" class="view-all-btn">
-                    View All <i class="fa-solid fa-arrow-right ms-1"></i>
+                <a href="#" class="btn custom-btn"> View All <i class="fa-solid fa-arrow-right ms-1"></i>
                 </a>
             </div>
 
             <div class="row g-4">
-
-                <!-- LEFT MAIN BLOGS -->
                 <div class="col-lg-8">
                     <div class="row g-4">
-
-                        <!-- MAIN BLOG CARD -->
                         <div class="col-md-6">
                             <div class="main-blog-card">
-                                <img src="https://picsum.photos/600/400" alt="">
+                                <img src="{{ asset('assets/images/no-img.jpg') }}" alt="blog-img">
                                 <div class="overlay-content">
-                                    <span class="date">04 May 2026</span>
+                                    <span class="date"><i class="fa-regular fa-clock me-1"></i>04 May 2026</span>
                                     <h4>How to Become a Full Stack Developer</h4>
                                     <p>Learn step by step roadmap to become a modern full stack developer...</p>
-                                    <a href="#" class="read-more">Read More →</a>
+                                    <a href="#" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="main-blog-card">
-                                <img src="https://picsum.photos/601/400" alt="">
+                                <img src="{{ asset('assets/images/no-img.jpg') }}" alt="blog-img">
                                 <div class="overlay-content">
-                                    <span class="date">03 May 2026</span>
+                                    <span class="date"><i class="fa-regular fa-clock me-1"></i>03 May 2026</span>
                                     <h4>Laravel Advanced Tips & Tricks</h4>
                                     <p>Boost your Laravel skills with real world advanced techniques...</p>
-                                    <a href="#" class="read-more">Read More →</a>
+                                    <a href="#" class="read-more">Read More<i class="fa-solid fa-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
-                <!-- RIGHT RECENT BLOGS -->
                 <div class="col-lg-4">
-
                     <div class="recent-blog-card">
-                        <img src="https://picsum.photos/120/120" alt="">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
                         <div class="recent-content">
-                            <span class="date">02 May 2026</span>
+                            <span class="date"><i class="fa-regular fa-clock me-1"></i>02 May 2026</span>
                             <h6>Vue JS Basics Guide</h6>
-                            <a href="#">Read More →</a>
+                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
 
                     <div class="recent-blog-card">
-                        <img src="https://picsum.photos/121/120" alt="">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
                         <div class="recent-content">
-                            <span class="date">01 May 2026</span>
+                            <span class="date"><i class="fa-regular fa-clock me-1"></i>01 May 2026</span>
                             <h6>AJAX with Laravel</h6>
-                            <a href="#">Read More →</a>
+                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
 
                     <div class="recent-blog-card">
-                        <img src="https://picsum.photos/122/120" alt="">
+                        <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
                         <div class="recent-content">
-                            <span class="date">30 Apr 2026</span>
+                            <span class="date"><i class="fa-regular fa-clock me-1"></i>30 Apr 2026</span>
                             <h6>Bootstrap UI Tips</h6>
-                            <a href="#">Read More →</a>
+                            <a href="#">Read More<i class="fa-solid fa-angle-right"></i></a>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>

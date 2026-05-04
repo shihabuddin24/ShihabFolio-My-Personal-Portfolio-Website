@@ -24,13 +24,13 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item fw-bold" href="{{ url('/about') }}">
-                                About<i class="fa-solid fa-angle-right"></i>
+                            <a class="dropdown-item fw-bold active" href="{{ url('/blogs') }}">
+                                Blogs<i class="fa-solid fa-angle-right"></i>
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item fw-bold active" href="{{ url('/blogs') }}">
-                                Blogs<i class="fa-solid fa-angle-right"></i>
+                            <a class="dropdown-item fw-bold" href="{{ url('/about') }}">
+                                About<i class="fa-solid fa-angle-right"></i>
                             </a>
                         </li>
                     </ul>
