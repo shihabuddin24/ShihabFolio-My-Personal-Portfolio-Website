@@ -141,28 +141,21 @@
     <section class="projects-section py-5">
         <div class="container text-center">
             <h2 class="section-title">Professional Projects</h2>
-
             <div class="row mt-4 g-4">
-
-                <!-- Project 1 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>Pharmacy POS System</h5>
-
                             <p class="text-secondary small">
                                 Complete inventory & sales management system with reporting features.
                             </p>
-
                             <div class="tech-stack">
                                 <span>Laravel</span>
                                 <span>Vue.js</span>
                                 <span>MySQL</span>
                             </div>
-
-                            <div class="project-footer d-flex justify-content-between mt-3">
+                            <div class="project-footer d-flex justify-content-between align-items-center mt-3">
                                 <small>Backend Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
                             </div>
@@ -170,24 +163,19 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>School Management System</h5>
-
                             <p class="text-secondary small">
                                 Multi-role school system with attendance, exam & result modules.
                             </p>
-
                             <div class="tech-stack">
                                 <span>Laravel</span>
                                 <span>Bootstrap</span>
                                 <span>MySQL</span>
                             </div>
-
                             <div class="project-footer d-flex justify-content-between mt-3">
                                 <small>Full Stack Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
@@ -196,24 +184,19 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>E-commerce Platform</h5>
-
                             <p class="text-secondary small">
                                 Online store with cart, payment integration and admin dashboard.
                             </p>
-
                             <div class="tech-stack">
                                 <span>PHP</span>
                                 <span>Laravel</span>
                                 <span>Stripe</span>
                             </div>
-
                             <div class="project-footer d-flex align-items-center justify-content-between mt-3">
                                 <small>Backend Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
@@ -222,24 +205,19 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>E-commerce Platform</h5>
-
                             <p class="text-secondary small">
                                 Online store with cart, payment integration and admin dashboard.
                             </p>
-
                             <div class="tech-stack">
                                 <span>PHP</span>
                                 <span>Laravel</span>
                                 <span>Stripe</span>
                             </div>
-
                             <div class="project-footer d-flex align-items-center justify-content-between mt-3">
                                 <small>Backend Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
@@ -248,24 +226,19 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>E-commerce Platform</h5>
-
                             <p class="text-secondary small">
                                 Online store with cart, payment integration and admin dashboard.
                             </p>
-
                             <div class="tech-stack">
                                 <span>PHP</span>
                                 <span>Laravel</span>
                                 <span>Stripe</span>
                             </div>
-
                             <div class="project-footer d-flex align-items-center justify-content-between mt-3">
                                 <small>Backend Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
@@ -274,24 +247,19 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
-
                         <div class="project-content">
                             <h5>E-commerce Platform</h5>
-
                             <p class="text-secondary small">
                                 Online store with cart, payment integration and admin dashboard.
                             </p>
-
                             <div class="tech-stack">
                                 <span>PHP</span>
                                 <span>Laravel</span>
                                 <span>Stripe</span>
                             </div>
-
                             <div class="project-footer d-flex align-items-center justify-content-between mt-3">
                                 <small>Backend Developer</small>
                                 <a href="{{ url('/project-details') }}">Explore<i class="fa-solid fa-angle-right"></i></a>
@@ -299,7 +267,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="mt-5">

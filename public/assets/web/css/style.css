@@ -383,16 +383,26 @@ button:focus,
     padding: 15px;
 }
 
+.project-content h5 {
+    color: var(--dark);
+}
+
 .tech-stack {
     margin-top: 8px;
+
 }
 
 .tech-stack span {
-    background: #f1f2f6;
+    background: var(--dark);
+    color: var(--light);
     padding: 4px 8px;
     font-size: 12px;
     border-radius: 5px;
-    margin-right: 5px;
+}
+
+.project-footer small {
+    color: var(--dark);
+    font-size: 16px;
 }
 
 .project-footer a {
@@ -848,6 +858,7 @@ button:focus,
 .recent-content a:hover i {
     transform: translateX(3px);
 }
+
 /* Blog Section End */
 
 /* Contacts Section Start */
