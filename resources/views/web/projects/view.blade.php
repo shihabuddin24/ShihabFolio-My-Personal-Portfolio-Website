@@ -15,30 +15,22 @@
         </div>
     </div>
 
-    <section class="project-details py-5">
+    <section class="project-details py-4">
         <div class="container">
-
-            <h2>Pharmacy POS System</h2>
-
+            <h2 class="section-title">Pharmacy POS System</h2>
             <p class="text-muted">
                 A complete pharmacy management solution for handling sales, inventory and reports.
             </p>
-
             <div class="project-banner mt-3">
                 <img src="{{ asset('assets/images/no-img.jpg') }}" class="w-100 rounded">
             </div>
-
             <div class="row mt-5">
-
-                <!-- LEFT -->
                 <div class="col-lg-8">
-
                     <h5>Project Overview</h5>
                     <p>
                         This system helps pharmacy owners manage their daily sales, track inventory,
                         generate reports and handle customer transactions efficiently.
                     </p>
-
                     <h5 class="mt-4">My Contribution</h5>
                     <ul>
                         <li>Developed REST APIs for POS module</li>
@@ -46,7 +38,6 @@
                         <li>Optimized database queries for performance</li>
                         <li>Fixed bugs and improved system stability</li>
                     </ul>
-
                     <h5 class="mt-4">Key Features</h5>
                     <ul>
                         <li>Sales & invoice management</li>
