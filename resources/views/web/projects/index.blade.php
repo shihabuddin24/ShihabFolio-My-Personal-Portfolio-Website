@@ -13,8 +13,10 @@
             </ul>
         </div>
     </div>
-    <section class="projects-section py-5">
-        <div class="container text-center">
+    <section class="projects-section py-4">
+        <div class="container">
+            <h2 class="section-title">My Latest Projects</h2>
+            <p class="text-secondary mb-4">A collection of recent work showcasing my skills and experience.</p>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">

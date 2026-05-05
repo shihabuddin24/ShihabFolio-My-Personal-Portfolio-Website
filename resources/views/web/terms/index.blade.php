@@ -13,9 +13,10 @@
             </ul>
         </div>
     </div>
-    <section class="terms-section py-5">
+    <section class="terms-section py-4">
         <div class="container">
             <h2 class="section-title">Terms & Conditions</h2>
+            <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             <p class="text-secondary">
                 Encrypted mihi islam assaovailable. Lorem ipsum dolor sit amet consectetur <br>
                 and raveri iremen fonttrast.

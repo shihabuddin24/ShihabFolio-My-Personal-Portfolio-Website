@@ -13,8 +13,10 @@
             </ul>
         </div>
     </div>
-    <section class="blog-section py-5">
+    <section class="blog-section py-4">
         <div class="container">
+            <h2 class="section-title">My Latest Blogs</h2>
+            <p class="text-secondary mb-4">Read tutorials, tips and development insights.</p>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="main-blog-card">
