@@ -141,7 +141,7 @@
     <section class="projects-section py-5">
         <div class="container text-center">
             <h2 class="section-title">Professional Projects</h2>
-            <div class="row mt-4 g-4">
+            <div class="row mt-2 g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="project-card">
                         <img src="{{ asset('assets/images/no-img.jpg') }}" alt="">
