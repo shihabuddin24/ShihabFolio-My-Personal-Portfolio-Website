@@ -37,3 +37,7 @@ Route::get('/blogs', function () {
 Route::get('/blog-details', function () {
     return view('web.blogs.view');
 });
+
+Route::get('/login', function () {
+    return view('web.components.login');
+});

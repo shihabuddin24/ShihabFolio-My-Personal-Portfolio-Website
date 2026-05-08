@@ -21,6 +21,8 @@
 
     @include('layouts.web.components.footer')
 
+    @stack('modal')
+
     @include('layouts.web.components.script')
 </body>
 </html>

@@ -963,6 +963,62 @@ button:focus,
 
 /* Contacts Section End */
 
+/* Modal Section Start */
+.review-modal .modal-dialog {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.review-modal .modal-content {
+    background: #fff;
+}
+
+.custom-input {
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    padding: 10px 15px;
+    box-shadow: none !important;
+}
+
+.custom-input:focus {
+    border-color: #0d6efd;
+}
+
+/* Rating */
+.rating-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 5px;
+}
+
+.rating-stars input {
+    display: none;
+}
+
+.rating-stars label {
+    font-size: 35px;
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rating-stars input:checked ~ label,
+.rating-stars label:hover,
+.rating-stars label:hover ~ label {
+    color: #ffc107;
+}
+
+@media (max-width: 576px) {
+    .review-modal .modal-content {
+        margin: 10px;
+    }
+}
+
+/* Modal Section End */
+
 /* Footer Section Start */
 .footer {
     background: var(--secondary);

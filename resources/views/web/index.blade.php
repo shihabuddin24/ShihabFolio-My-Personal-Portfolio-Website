@@ -18,7 +18,10 @@
                         Experienced in API development, dynamic UI, and eCommerce systems, with strong expertise in MySQL
                         and PostgreSQL to ensure fast, secure, and high-performance applications.
                     </p>
-                    <a href="#" class="btn custom-btn mt-2"><i class="fa-regular fa-star me-1"></i>Leave a Review</a>
+                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#reviewModal" class="btn custom-btn mt-2">
+                        <i class="fa-regular fa-star me-1"></i>
+                        Leave a Review
+                    </a>
                     <p class="hero-rating mt-4">
                         Avg Rating: <i class="fa-regular fa-star"></i> 4.9/5 (<span class="animate-counter">200</span>+
                         Reviews)
@@ -528,3 +531,7 @@
     </section>
 
 @endsection
+
+@push('modal')
+    @include('web.components.review')
+@endpush
