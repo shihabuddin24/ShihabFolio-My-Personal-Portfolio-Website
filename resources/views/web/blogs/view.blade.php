@@ -17,59 +17,68 @@
 
     <section class="blog-details py-4">
         <div class="container">
-            <h2 class="section-title">Full Stack Development</h2>
-            <p class="text-muted">
-                A complete web solutions for all kinds of developers.
-            </p>
-            <div class="blog-banner mt-3">
-                <img src="{{ asset('assets/images/no-img.jpg') }}" class="w-100 rounded">
+            <div class="blog-banner">
+                <img src="{{ asset('assets/images/no-img.jpg') }}" class="img-fluid">
             </div>
-            <div class="row mt-5">
+            <div class="row mt-4">
                 <div class="col-lg-8">
-                    <h5>Project Overview</h5>
-                    <p>
-                        This system helps pharmacy owners manage their daily sales, track inventory,
-                        generate reports and handle customer transactions efficiently.
-                    </p>
-                    <h5 class="mt-4">My Contribution</h5>
-                    <ul>
-                        <li>Developed REST APIs for POS module</li>
-                        <li>Implemented inventory management logic</li>
-                        <li>Optimized database queries for performance</li>
-                        <li>Fixed bugs and improved system stability</li>
-                    </ul>
-                    <h5 class="mt-4">Key Features</h5>
-                    <ul>
-                        <li>Sales & invoice management</li>
-                        <li>Stock tracking system</li>
-                        <li>Report generation</li>
-                        <li>Multi-user access</li>
-                    </ul>
-
+                    {{-- <h2 class="section-title">Full Stack Development</h2> --}}
+                    <div class="blog-detail-content">
+                        <div class="d-flex">
+                            <div class="user-img">
+                                <img src="{{ asset('assets/images/author.png') }}" alt="user-img">
+                            </div>
+                            <div class="d-flex flex-column ms-2">
+                                <span class="user-name fw-bold">Shihab Uddin</span>
+                                <small class="date"><i class="fa-regular fa-clock me-1"></i>03 May 2026</small>
+                            </div>
+                        </div>
+                        <h2 class="section-title mt-2">Full Stack Development</h2>
+                        <p class="desc text-secondary mt-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ipsam error molestiae nulla id, explicabo soluta,
+                            quae quasi, distinctio porro exercitationem tempore necessitatibus alias suscipit deleniti eius provident officiis.
+                            Ratione soluta, tempora eaque voluptates expedita adipisci autem recusandae sunt fugit facilis nulla delectus incidunt numquam,
+                            error alias totam unde minima. Atque minima non, ducimus eligendi voluptas eos quis itaque adipisci ad,
+                            quo enim consectetur blanditiis, voluptates aliquid? Repudiandae laboriosam ea delectus numquam rem! Porro rem placeat aliquam ex non consectetur animi?
+                            Dolores, aperiam. Magni ullam ut minima esse, consectetur atque accusamus ex quidem nobis. Dolores laudantium, omnis accusantium a libero ex tenetur blanditiis,
+                            magnam temporibus illum saepe quae recusandae nulla repellendus aspernatur alias fuga laboriosam commodi doloribus velit? Et nostrum cupiditate neque saepe.
+                        </p>
+                        <p class="tags"><strong>Tags:</strong>
+                            <span>hi</span>
+                            <span>hello</span>
+                            <span>php</span>
+                            <span>js</span>
+                        </p>
+                    </div>
                 </div>
-
-                <!-- RIGHT -->
                 <div class="col-lg-4">
-
-                    <div class="blog-info-box">
-                        <h6>Project Info</h6>
-
-                        <p><strong>Role:</strong> Backend Developer</p>
-
-                        <p><strong>Tech Stack:</strong></p>
-                        <div class="tech-stack">
-                            <span>Laravel</span>
-                            <span>Vue.js</span>
-                            <span>MySQL</span>
+                    <h5 class="fw-bold mb-3">Recent Blogs</h5>
+                    <div class="recent-blogs">
+                        <div class="recent-blog-card">
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
+                            <div class="recent-content">
+                                <span class="date"><i class="fa-regular fa-clock me-1"></i>02 May 2026</span>
+                                <h6>Vue JS Basics Guide</h6>
+                                <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
                         </div>
 
-                        <p class="mt-3"><strong>Type:</strong> Web Application</p>
+                        <div class="recent-blog-card">
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
+                            <div class="recent-content">
+                                <span class="date"><i class="fa-regular fa-clock me-1"></i>01 May 2026</span>
+                                <h6>AJAX with Laravel</h6>
+                                <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
+                        </div>
 
-                        <div class="mt-3">
-                            <small class="text-muted">
-                                This project was developed as part of my role in a company.
-                                Source code is not publicly available.
-                            </small>
+                        <div class="recent-blog-card">
+                            <img src="{{ asset('assets/images/no-img.jpg') }}" alt="recent-blog-img">
+                            <div class="recent-content">
+                                <span class="date"><i class="fa-regular fa-clock me-1"></i>30 Apr 2026</span>
+                                <h6>Bootstrap UI Tips</h6>
+                                <a href="{{ url('/blog-details') }}">Read More<i class="fa-solid fa-angle-right"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
