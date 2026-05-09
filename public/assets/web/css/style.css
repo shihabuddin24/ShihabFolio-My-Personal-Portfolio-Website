@@ -1028,7 +1028,7 @@ button:focus,
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
-    gap: 5px;
+    gap: 6px;
 }
 
 .rating-stars input {
@@ -1036,16 +1036,25 @@ button:focus,
 }
 
 .rating-stars label {
-    font-size: 35px;
-    color: #dcdcdc;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.rating-stars input:checked ~ label,
-.rating-stars label:hover,
-.rating-stars label:hover ~ label {
-    color: #ffc107;
+.rating-stars label i {
+    font-size: 22px;
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.rating-stars label:hover i,
+.rating-stars label:hover ~ label i {
+    font-weight: 800;
+    color: var(--deep-primary);
+    transform: scale(1.01);
+}
+
+.rating-stars input:checked ~ label i {
+    font-weight: 800;
+    color: var(--deep-primary);
 }
 
 /* Modal Section End */
