@@ -88,7 +88,7 @@ button:focus,
     content: "";
     position: absolute;
     left: 0;
-    bottom: -23px;
+    bottom: -18px;
     height: 2px;
     border-radius: 1rem;
     background: var(--primary);
@@ -104,7 +104,7 @@ button:focus,
 }
 
 .header-logo {
-    max-height: 45px;
+    max-height: 35px;
     width: 100%;
     object-fit: cover;
 }

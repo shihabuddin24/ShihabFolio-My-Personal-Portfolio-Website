@@ -18,7 +18,7 @@
     <section class="project-details py-4">
         <div class="container">
             <h2 class="section-title">Pharmacy POS System</h2>
-            <p class="text-secondary fw-bold">
+            <p class="text-secondary">
                 A complete pharmacy management solution for handling sales, inventory and reports.
             </p>
             <div class="project-banner mt-3">
