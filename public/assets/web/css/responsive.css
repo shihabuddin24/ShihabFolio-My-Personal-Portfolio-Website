@@ -104,6 +104,10 @@
         padding: 6px 14px;
         font-size: 14px;
     }
+
+    .review-modal .modal-content {
+        margin: 10px;
+    }
 }
 
 @media (max-width: 299px) {

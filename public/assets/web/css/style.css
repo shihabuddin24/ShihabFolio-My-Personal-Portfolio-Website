@@ -64,7 +64,7 @@ button:focus,
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 999;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 
@@ -112,8 +112,9 @@ button:focus,
 .custom-btn {
     background: var(--primary);
     color: var(--light);
-    border-radius: 6px;
-    padding: 8px 18px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
 }
 
 .custom-btn:hover {
@@ -965,28 +966,64 @@ button:focus,
 
 /* Modal Section Start */
 .review-modal .modal-dialog {
-    min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .review-modal .modal-content {
-    background: #fff;
+    background: var(--light);
+}
+
+.review-modal .modal-content .modal-title {
+    color: var(--dark) !important;
+}
+.review-modal .modal-content .modal-title i {
+    color: var(--primary) !important;
+}
+
+.review-modal .modal-content .custom-close-btn {
+    color: var(--primary) !important;
+    border: none;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.review-modal .modal-content .custom-close-btn:hover {
+    color: var(--deep-primary);
+}
+
+.review-modal .modal-content .form-label {
+    color: var(--dark) !important;
+}
+
+.review-modal .modal-content .modal-footer .custom-close-btn {
+    color: var(--primary) !important;
+    border: none;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.review-modal .modal-content .custom-close-btn:hover {
+    color: var(--deep-primary);
+}
+
+.review-modal .modal-content .form-label {
+    color: var(--dark) !important;
 }
 
 .custom-input {
     height: 50px;
-    border-radius: 12px;
-    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    border: 1px solid var(--secondary-border);
     padding: 10px 15px;
     box-shadow: none !important;
 }
 
 .custom-input:focus {
-    border-color: #0d6efd;
+    border-color: var(--primary);
 }
 
-/* Rating */
 .rating-stars {
     display: flex;
     flex-direction: row-reverse;
@@ -1009,12 +1046,6 @@ button:focus,
 .rating-stars label:hover,
 .rating-stars label:hover ~ label {
     color: #ffc107;
-}
-
-@media (max-width: 576px) {
-    .review-modal .modal-content {
-        margin: 10px;
-    }
 }
 
 /* Modal Section End */
