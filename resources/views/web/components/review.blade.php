@@ -11,12 +11,12 @@
                 <form action="" method="POST">
                     <div class="row g-3">
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                            <label class="form-label fw-semibold">Full Name</label>
                             <input type="text" class="form-control custom-input" placeholder="Enter your full name">
                         </div>
 
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                            <label class="form-label fw-semibold">Email Address</label>
                             <input type="email" class="form-control custom-input" placeholder="Enter email address">
                         </div>
 
@@ -25,13 +25,13 @@
                             <input type="text" class="form-control custom-input" placeholder="Enter company name">
                         </div>
 
-                        <div class="col-md-6">
+                        <div class="col-md-6 mb-2">
                             <label class="form-label fw-semibold">Designation</label>
                             <input type="text" class="form-control custom-input" placeholder="Enter designation">
                         </div>
 
-                        <div class="col-12">
-                            <label class="form-label fw-semibold mb-2"> Rating <span class="text-danger">*</span></label>
+                        <div class="col-12 d-flex">
+                            <label class="form-label fw-semibold me-2"> Rating:</label>
                             <div class="rating-stars">
                                 <input type="radio" name="rating" id="star5" value="5">
                                 <label for="star5"><i class="fa-regular fa-star"></i></label>
