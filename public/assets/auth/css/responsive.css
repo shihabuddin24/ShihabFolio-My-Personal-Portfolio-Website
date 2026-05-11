@@ -1,9 +1,5 @@
 @media (max-width: 480px) {
-    .login-box {
-        padding: 2rem 1.4rem 1.8rem;
-    }
-
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 }
