@@ -39,5 +39,5 @@ Route::get('/blog-details', function () {
 });
 
 Route::get('/login', function () {
-    return view('web.components.login');
+    return view('auth.login');
 });
