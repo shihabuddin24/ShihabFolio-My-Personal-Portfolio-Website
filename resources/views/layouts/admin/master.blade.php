@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@hasSection('title') @yield('title') | @endif {{ config('app.name') }}</title>
 
-    @include('layouts.auth.components.css')
+    @include('layouts.admin.components.css')
 </head>
 <body>
     @yield('main_content')
 
     @stack('modal')
 
-    @include('layouts.auth.components.script')
+    @include('layouts.admin.components.script')
 </body>
 </html>
