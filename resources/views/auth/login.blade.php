@@ -36,12 +36,12 @@
                 </label>
             </div>
 
-            <a href="#" class="btn-forgot">Forgot Password?</a>
+            <a href="{{ url('/forgot-password') }}" class="btn-forgot">Forgot Password?</a>
         </div>
 
         <button class="btn-login">Login</button>
 
-        <a href="#" class="btn-home mb-0 text-secondary">
+        <a href="{{ url('/') }}" class="btn-home mb-0 text-secondary">
             <i class="fa-solid fa-arrow-left"></i>
             Back to Home
         </a>

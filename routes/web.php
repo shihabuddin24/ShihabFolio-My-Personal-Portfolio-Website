@@ -41,3 +41,11 @@ Route::get('/blog-details', function () {
 Route::get('/login', function () {
     return view('auth.login');
 });
+
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+});
+
+Route::get('/reset-password', function () {
+    return view('auth.reset-password');
+});
