@@ -1,0 +1,143 @@
+/* =========================
+        Responsive Sidebar
+========================= */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        position: fixed;
+
+        top: 0;
+        left: -280px !important;
+
+        width: 280px;
+        max-width: 85%;
+
+        height: 100vh;
+
+        z-index: 1001;
+    }
+
+    .sidebar.mobile-show {
+        left: 0 !important;
+    }
+
+    .main-header {
+        padding-left: 20px !important;
+    }
+
+    .main-content {
+        margin-left: 0 !important;
+    }
+
+    .main-header.expand {
+        padding-left: 20px !important;
+    }
+
+    .main-content.expand {
+        margin-left: 0 !important;
+    }
+
+    .sidebar-overlay {
+        position: fixed;
+        inset: 0;
+
+        background: rgba(15, 23, 42, .45);
+
+        backdrop-filter: blur(2px);
+
+        z-index: 999;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition: .3s ease;
+    }
+
+    .sidebar-overlay.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .main-header {
+        height: 65px;
+        padding-inline: 14px !important;
+    }
+
+    .main-content {
+        margin-top: 65px;
+        padding: 14px;
+    }
+
+    .content-box {
+        padding: 18px;
+        border-radius: 16px;
+    }
+
+    .toggle-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .admin-name {
+        display: none;
+    }
+
+    .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .sidebar {
+        width: 220px;
+        left: -220px !important;
+    }
+
+    .sidebar.mobile-show {
+        left: 0 !important;
+    }
+
+    .sidebar-top {
+        padding-inline: 14px;
+    }
+
+    .sidebar-menu {
+        padding: 14px 10px;
+    }
+
+    .sidebar-menu ul li a {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .sidebar-menu ul li a i {
+        font-size: 16px;
+        min-width: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .content-box {
+        padding: 15px;
+    }
+
+    .main-footer {
+        padding: 14px;
+    }
+
+}

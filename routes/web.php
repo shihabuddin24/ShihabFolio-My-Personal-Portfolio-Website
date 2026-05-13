@@ -49,3 +49,7 @@ Route::get('/forgot-password', function () {
 Route::get('/reset-password', function () {
     return view('auth.reset-password');
 });
+
+Route::get('/dashboard', function () {
+    return view('admin.dashboard.index');
+});

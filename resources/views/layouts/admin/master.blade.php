@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@hasSection('title') @yield('title') | @endif {{ config('app.name') }}</title>
-
     @include('layouts.admin.components.css')
 </head>
 <body>
-    @yield('main_content')
+    @include('layouts.admin.components.header')
 
-    @stack('modal')
+    @include('layouts.admin.components.side-bar')
+
+    <main class="main-content" id="mainContent">
+
+        <div class="content-box">
+            @yield('main_content')
+        </div>
+
+        @include('layouts.admin.components.footer')
+
+        @stack('modal')
+        
+    </main>
 
     @include('layouts.admin.components.script')
 </body>
