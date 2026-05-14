@@ -30,9 +30,12 @@
   :root {
       --sidebar-width: 270px;
       --sidebar-collapse-width: 88px;
-      --primary-color: #2563eb;
-      --secondary-border: #e2e8f0;
-      --sidebar-bg: #111827;
+      --primary: #4CB6B6;
+      --deep-primary: #35a6a6;
+      --secondary-border: #dfdfdf;
+      --secondary-color: #6c757d;
+      --light: #F6FBFB;
+      --dark: #2C3E50;
       --body-bg: #f5f7fb;
       --transition: all .35s ease;
   }
@@ -43,32 +46,20 @@
       font-family: sans-serif;
   }
 
-  /* =========================
-            Header
-        ========================== */
-
   .main-header {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-
       height: 70px;
-
       background: #fff;
-
       border-bottom: 1px solid var(--secondary-border);
-
       z-index: 1000;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       padding: 0 25px 0 calc(var(--sidebar-width) + 25px);
-
       transition: var(--transition);
-
       box-shadow: 0 2px 12px rgba(15, 23, 42, .03);
   }
 
@@ -110,7 +101,7 @@
   }
 
   .toggle-btn i {
-      color: var(--primary-color);
+      color: var(--primary);
   }
 
   /* =========================
@@ -174,7 +165,7 @@
       width: var(--sidebar-width);
       height: 100vh;
 
-      background: var(--sidebar-bg);
+      background: var(--dark);
 
       transition: var(--transition);
 
@@ -239,7 +230,7 @@
 
       border-radius: 10px;
 
-      color: var(--primary-color);
+      color: var(--primary);
 
       font-size: 18px;
 
@@ -264,7 +255,7 @@
   }
 
   .logo i {
-      color: var(--primary-color);
+      color: var(--primary);
 
       min-width: 35px;
 
