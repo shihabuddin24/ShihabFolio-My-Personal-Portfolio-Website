@@ -21,10 +21,14 @@
                 </a>
             </li>
             <li>
-                <a href="#" class="dropdown-item text-danger">
-                    <i class="fa-solid fa-right-from-bracket me-2"></i>
-                    Logout
-                </a>
+                <form action="{{ route('logout') }}" method="POST" class="ajax-form d-inline">
+                    @csrf
+
+                    <button type="submit" class="dropdown-item text-danger submit-btn">
+                        <i class="fa-solid fa-right-from-bracket me-2"></i>
+                        Logout
+                    </button>
+                </form>
             </li>
         </ul>
     </div>

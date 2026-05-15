@@ -38,10 +38,6 @@ Route::get('/blog-details', function () {
     return view('web.blogs.view');
 });
 
-Route::get('/login', function () {
-    return view('auth.login');
-});
-
 Route::get('/forgot-password', function () {
     return view('auth.forgot-password');
 });
@@ -50,6 +46,4 @@ Route::get('/reset-password', function () {
     return view('auth.reset-password');
 });
 
-Route::get('/dashboard', function () {
-    return view('admin.dashboard.index');
-});
+require __DIR__.'/auth.php';
