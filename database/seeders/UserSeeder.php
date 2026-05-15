@@ -11,7 +11,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $users = array(
-            array('name' => 'Shihab Uddin', 'email' => 'shihabuddin@gmail.com', 'password' => Hash::make('ShihabUddin@786'), 'created_at' => now(), 'updated_at' => now())
+            array('name' => 'Shihab Uddin', 'email' => 'ss@gmail.com', 'password' => Hash::make('1234'), 'created_at' => now(), 'updated_at' => now())
         );
 
         User::insert($users);

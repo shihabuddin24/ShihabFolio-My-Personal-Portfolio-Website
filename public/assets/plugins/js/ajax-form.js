@@ -10,21 +10,12 @@ $(document).ready(function () {
     });
 
     // Setup Toastr Message
-    toastr.options = {
-        closeButton: true,
-        progressBar: true,
-        newestOnTop: true,
-        positionClass: "toast-top-right",
-        timeOut: 3000
-    };
+    toastr.options = {preventDuplicates: true};
 
     // Setup Spinner
-    let $submitSpinner = `<div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span></div>`
+    let $submitSpinner = `<div class="spinner-border spinner-border-sm  text-light" role="status"><span class="visually-hidden">Loading...</span></div>`
 
 
-    // =========================
-    // GLOBAL AJAX FORM HANDLER
-    // =========================
     $(document).on("submit", ".ajax-form", function (e) {
         e.preventDefault();
 
@@ -48,35 +39,24 @@ $(document).ready(function () {
 
             success: function (res) {
 
-                // ======================
-                // FIX 1: STORE MESSAGE ONLY (NO DUPLICATE TOAST HERE)
-                // ======================
                 if (res.message) {
+                    sessionStorage.setItem("hasPreviousMessage", "1");
                     sessionStorage.setItem("previousMessage", res.message);
                     sessionStorage.setItem("notifyType", res.type ?? "success");
                 }
 
-                // ======================
-                // FIX 2: REMOVE IMMEDIATE TOAST (IMPORTANT)
-                // ======================
-                // ❌ আগের bug ছিল: এখানে toastr + redirect race condition
-                // তাই এটা remove করা হলো
+                if (!res.redirect && res.message) {
+                    toastr.success(res.message);
+                }
 
-                // ======================
-                // RESET FORM
-                // ======================
-                form[0].reset();
+                if(form.data("reset")){
+                    form[0].reset();
+                }
 
-                // ======================
-                // REDIRECT (IMPROVED - NO DELAY)
-                // ======================
                 if (res.redirect) {
                     window.location.href = res.redirect;
                 }
 
-                // ======================
-                // SECONDARY REDIRECT
-                // ======================
                 if (res.secondary_redirect_url) {
                     window.open(res.secondary_redirect_url, "_blank");
                 }
@@ -87,7 +67,9 @@ $(document).ready(function () {
 
                 if (xhr.status === 422) {
 
-                    $.each(xhr.responseJSON.errors, function (key, value) {
+                    let errors = xhr.responseJSON.errors;
+
+                    $.each(errors, function (key, value) {
                         toastr.warning(value[0]);
                     });
 
@@ -111,6 +93,5 @@ $(document).ready(function () {
         });
 
     });
-
 
 });

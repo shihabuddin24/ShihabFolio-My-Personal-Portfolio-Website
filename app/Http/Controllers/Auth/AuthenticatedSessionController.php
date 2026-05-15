@@ -27,14 +27,12 @@ class AuthenticatedSessionController extends Controller
             $request->session()->regenerate();
 
             return response()->json([
-                'type' => 'success',
                 'message' => 'Login successful',
                 'redirect' => route('dashboard')
             ]);
         }
 
         return response()->json([
-            'type' => 'error',
             'message' => 'Invalid email or password'
         ], 401);
     }
@@ -47,7 +45,6 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerateToken();
 
         return response()->json([
-            'type' => 'success',
             'message' => 'Logged out successfully',
             'redirect' => route('login')
         ]);

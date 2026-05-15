@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+#toast-container>.toast {
+    border-radius: 12px;
+    box-shadow: none !important;
+}
+
 :root {
     --primary: #4CB6B6;
     --deep-primary: #35a6a6;

@@ -27,6 +27,11 @@
       box-shadow: none;
   }
 
+  #toast-container>.toast {
+    border-radius: 12px;
+    box-shadow: none !important;
+}
+
   :root {
       --sidebar-width: 270px;
       --sidebar-collapse-width: 88px;
