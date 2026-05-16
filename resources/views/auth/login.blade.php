@@ -32,7 +32,7 @@
 
             <div class="btn-links-row">
                 <div class="form-check remember-wrap">
-                    <input class="form-check-input remember-check" type="checkbox" id="rememberMe">
+                    <input class="form-check-input remember-check" type="checkbox" name="remember" id="rememberMe">
                     <label class="form-check-label remember-label text-secondary" for="rememberMe">
                         Remember Me
                     </label>
